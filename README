@@ -1,0 +1,27 @@
+----------------------------------------------------------
+-- Abstract: 	SuperAduio - Extends the built-in audio 
+--				class to provide pan and pitch capabilities.
+----------------------------------------------------------
+-- SuperAudio
+-- Version: 1.0
+-- 
+-- Sample code is MIT licensed
+-- Copyright (C) 2012 Mike Gieson. All Rights Reserved.
+
+----------------------------------------------------------
+-- USAGE
+----------------------------------------------------------
+-- Include this file at the top of your "main.lau" file as:
+-- require("SuperAudio")
+
+-- When playing a file, you'll need to capture the "source" 
+-- using the secret undocumented technique of:
+
+-- local myTrack = audio.load("path/to/file/mp3")
+-- local myChannel, mySource = audio.play(myTrack)
+
+----------------------------------------------------------
+-- IMPORTANT
+----------------------------------------------------------
+-- Pan adjustments can only happen on "mono" audio sources. 
+-- Stereo files can NOT be panned.
